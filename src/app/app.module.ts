@@ -6,15 +6,20 @@ import { AppComponent } from './app.component';
 import { ClarityModule } from '@clr/angular';
 import { IssueListComponent } from './issue-list/issue-list.component';
 
+import { ReactiveFormsModule } from '@angular/forms';
+import { IssuesReportComponent } from './issues-report/issues-report.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    IssueListComponent
+    IssueListComponent,
+    IssuesReportComponent
   ],
   imports: [
     BrowserModule,
     ClarityModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

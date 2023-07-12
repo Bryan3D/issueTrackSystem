@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Form, FormControl, FormGroup } from '@angular/forms';
 import { Issue } from '../issue';
+import { IssuesService } from '../issues.service';
 
 interface IssueForm{
   title: FormControl<string>;
@@ -16,6 +17,7 @@ interface IssueForm{
   styleUrls: ['./issues-report.component.css']
 })
 export class IssuesReportComponent {
+[x: string]: any;
   issueForm = new FormGroup<IssueForm>({
     title:new FormControl('', {nonNullable: true}),
     description:new FormControl ('', {nonNullable: true}),
